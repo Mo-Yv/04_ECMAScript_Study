@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>5_子类对父类方法的重写</title>
+	</head>
+	<body>
+		<script>
+			class Human {
+				constructor() {}
+				print = () => console.log("这是父类方法");
+			}
+
+			class Person {
+				constructor() {}
+				print = () => console.log("这是子类方法");
+			}
+			const ls = new Person();
+			ls.print();
+		</script>
+	</body>
+</html>
