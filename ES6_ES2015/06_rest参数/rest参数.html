@@ -6,23 +6,6 @@
 		<title>rest参数</title>
 	</head>
 	<body>
-		<!-- 
-			ES6引入rest参数,用于获取函数的实参,代替arguments
-		 -->
-		<script>
-			// argument
-			function fun1() {
-				console.log(arguments);
-			}
-			fun1(1, 2, 3, 4, 5);
-
-			// rest参数
-			// 命名不是固定的
-			const fun2 = (...rest) => console.log(rest);
-			fun2(1, 2, 3, 4, 5);
-			// rest参数必须放在最后一个
-			const fun3 = (a, b, ...args) => console.log(a, b, args);
-			fun3(1, 2, 3, 4, 5);
-		</script>
+		<script src="./rest参数.js"></script>
 	</body>
 </html>

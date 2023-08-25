@@ -3,7 +3,7 @@
 const fs = require("fs");
 
 // 调用方法读取文件
-// fs.readFile('./docs/笔记.txt', 'utf8', function (err, data) {
+// fs.readFile('../docs/笔记.txt', 'utf8', function (err, data) {
 // 	// 如果出错,则抛出异常
 // 	if (err) throw err;
 // 	// 输出读取结果
@@ -12,7 +12,7 @@ const fs = require("fs");
 
 // 使用Promise封装
 const promise = new Promise((resolve, reject) => {
-	fs.readFile("./docs/笔记.txt", "utf8", function (err, data) {
+	fs.readFile("../docs/笔记.txt", "utf8", function (err, data) {
 		// 如果出错,则抛出异常
 		if (err) reject(err);
 		// 输出读取结果

@@ -6,15 +6,6 @@
 		<title>6_catch方法</title>
 	</head>
 	<body>
-		<!-- 
-			相当于没有成功回调(第一个参数)的then方法
-		 -->
-		<script>
-			new Promise((resolve, reject) => {
-				setTimeout(() => {
-					false ? resolve("成功") : reject("失败");
-				}, 1000);
-			}).catch((err) => { console.log(err) }).catch;
-		</script>
+		<script src="./js/6_catch方法.js"></script>
 	</body>
 </html>
